@@ -45,5 +45,21 @@ This engine specializes in extracting actionable insights, categorizing issues i
 - `GET /api/v1/insights/trends`: Get the global analytics, broken down into specific themes for Product Gaps and Training Needs, correlated with sentiment.
 - `GET /api/v1/tickets`: View the raw processed tickets in the database.
 
-## Future Architecture Roadmap
-Our ultimate goal is to integrate this engine directly with Zendesk via Webhooks and build a Zendesk Sidebar App. When an agent opens a ticket, the app will query this engine's database using TF-IDF Cosine Similarity to find past resolved tickets and instantly suggest the historic solution to the agent.
+## Implementation Plans
+
+### Phase 1: Insight Engine
+- [x] Set up FastAPI framework and routing architecture.
+- [x] Develop zero-LLM NLP processing pipeline using NLTK (VADER Sentiment Analysis).
+- [x] Implement heuristic categorization engine (Bugs, Product Gaps, Training Needs).
+- [x] Build unsupervised topic modeling using TF-IDF and NMF for trend extraction.
+- [x] Create local SQLite database integration via SQLAlchemy.
+- [x] Build API endpoints for bulk ticket upload (`/api/v1/tickets/upload`).
+- [x] Build API endpoints for analytics retrieval (`/api/v1/insights/trends`).
+
+### Phase 2: Zendesk Integration & Agent Assist
+- [ ] Develop Zendesk Webhook integration for real-time, event-driven ticket ingestion.
+- [ ] Implement TF-IDF Cosine Similarity to match incoming tickets with past resolved issues.
+- [ ] Create an API endpoint to serve instant historic solutions to agents.
+- [ ] Build and deploy a Zendesk Sidebar App to interface with the Insight Engine.
+- [ ] Migrate from SQLite to a production-grade database (MongoDB or PostgreSQL).
+- [ ] Deploy the API to a scalable cloud environment.
