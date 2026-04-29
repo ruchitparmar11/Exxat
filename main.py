@@ -109,27 +109,37 @@ def get_trends(db: Session = Depends(get_db)):
         for cat, count in cat_counts.most_common()
     ]
     
-    # 2. Aggregate Sentiments
+    # 2. Aggregate Sentiments Global
     sentiments = [t.sentiment for t in tickets if t.sentiment]
     sentiment_counts = Counter(sentiments)
     sentiment_distribution = dict(sentiment_counts)
     
-    # 3. Extract Recurring Topics (Trends) using Unsupervised Topic Modeling
-    # Only analyze texts from "Negative" sentiment or specific categories like "Bug" or "Product Gap"
-    # to find actionable issues.
-    actionable_texts = [
-        t.text for t in tickets 
-        if t.sentiment == "Negative" or t.category in ["Bug", "Product Gap", "Training Need", "Other"]
-    ]
-    
-    recurring_topics = []
-    if len(actionable_texts) >= 5:
-        topics = extract_trends(actionable_texts, n_topics=4, n_top_words=4)
-        recurring_topics = topics
+    # 3. Sentiment by Category Breakdown
+    category_sentiments = {}
+    for cat in cat_counts.keys():
+        category_sentiments[cat] = {"Positive": 0, "Neutral": 0, "Negative": 0}
+        
+    for t in tickets:
+        if t.category and t.sentiment:
+            category_sentiments[t.category][t.sentiment] += 1
+            
+    # 4. Extract Specific Trends for Product Gaps
+    product_gap_texts = [t.text for t in tickets if t.category == "Product Gap"]
+    product_gap_trends = []
+    if len(product_gap_texts) >= 3:
+        product_gap_trends = extract_trends(product_gap_texts, n_topics=3, n_top_words=4)
+        
+    # 5. Extract Specific Trends for Training Needs
+    training_need_texts = [t.text for t in tickets if t.category == "Training Need"]
+    training_need_trends = []
+    if len(training_need_texts) >= 3:
+        training_need_trends = extract_trends(training_need_texts, n_topics=3, n_top_words=4)
         
     return schemas.TrendResponse(
         total_tickets=total_tickets,
         sentiment_distribution=sentiment_distribution,
         top_categories=top_categories,
-        recurring_topics=recurring_topics
+        category_sentiments=category_sentiments,
+        product_gap_trends=product_gap_trends,
+        training_need_trends=training_need_trends
     )

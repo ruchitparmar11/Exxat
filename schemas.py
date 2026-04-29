@@ -25,8 +25,15 @@ class TrendSummary(BaseModel):
     count: int
     percentage: float
 
+class CategorySentiment(BaseModel):
+    positive: int = 0
+    neutral: int = 0
+    negative: int = 0
+
 class TrendResponse(BaseModel):
     total_tickets: int
     sentiment_distribution: dict
     top_categories: List[TrendSummary]
-    recurring_topics: List[dict] # Will hold clustering results from scikit-learn
+    category_sentiments: dict # Maps category name to CategorySentiment
+    product_gap_trends: List[dict]
+    training_need_trends: List[dict]
