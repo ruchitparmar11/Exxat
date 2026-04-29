@@ -1,0 +1,1402 @@
+[
+  {
+    "ticket_id": "9e14bf10-cbd6-441a-be87-bead3938a104",
+    "text": "How do I set up 2FA?",
+    "timestamp": "2026-04-10T20:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "25fc4b70-a7c9-4270-b30e-006dc9d98b98",
+    "text": "I get an error message when I try to use notification system.",
+    "timestamp": "2026-04-03T02:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "0c4e9e3f-86b4-426b-8ec6-1f78671c85f3",
+    "text": "The mobile app is not loading on my screen.",
+    "timestamp": "2026-04-14T06:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "2c96771a-8371-44e2-9e64-83e2421c23c7",
+    "text": "Why isn't there an option to save custom views?",
+    "timestamp": "2026-04-26T04:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "de18d14a-5935-46cf-91b2-6272ad2831f0",
+    "text": "I can't figure out how to change my billing details. Please help.",
+    "timestamp": "2026-04-23T11:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "2261f28a-0980-4889-a52a-5f5445e310df",
+    "text": "The mobile app is completely broken and crashes.",
+    "timestamp": "2026-03-31T21:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "ef68bd37-0d37-43c0-b448-95dd7e6b1c0c",
+    "text": "How do I add a new team member?",
+    "timestamp": "2026-04-01T05:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "4db0dc8a-8062-457e-83ec-73ff5e719693",
+    "text": "Can I get an invoice for last month?",
+    "timestamp": "2026-03-31T21:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "dc1c666f-0f60-424a-b4d0-7a3d90672e1e",
+    "text": "Why isn't there an option to export reports to Excel automatically?",
+    "timestamp": "2026-04-28T05:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "5fa87213-cbcf-4e33-9150-8c4d2dc3f6f7",
+    "text": "I can't figure out how to add a new team member. Please help.",
+    "timestamp": "2026-04-14T02:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "575019ba-5827-42c1-9b52-3e5fea68b303",
+    "text": "I'm confused about how to configure the dashboard.",
+    "timestamp": "2026-04-09T03:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "d2d9da18-6b4f-4b60-a5d1-0160bdb52d73",
+    "text": "Why isn't there an option to integrate with Slack?",
+    "timestamp": "2026-04-08T11:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "58b83785-e3cd-4a3a-a9a5-6bff1df0b8d9",
+    "text": "Thank you for the quick support, the new notification system is great!",
+    "timestamp": "2026-04-24T04:55:10.807968",
+    "actual_category": "Feedback",
+    "actual_sentiment": "Positive"
+  },
+  {
+    "ticket_id": "c6b6cc55-2402-465d-aff3-69e5c7d1b0da",
+    "text": "Can I get an invoice for last month?",
+    "timestamp": "2026-04-13T11:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "14cfca3b-4475-4677-97e5-08c466f4b8c8",
+    "text": "When does my subscription renew?",
+    "timestamp": "2026-04-02T07:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "054a91f6-6f61-474a-9379-31f90a5087b7",
+    "text": "I get an error message when I try to use notification system.",
+    "timestamp": "2026-04-16T11:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "017d7098-eebe-4e58-90e6-74711a814622",
+    "text": "Can I get an invoice for last month?",
+    "timestamp": "2026-04-08T06:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "2937597f-a47f-4676-af48-01da0e74571c",
+    "text": "The payment gateway is completely broken and crashes.",
+    "timestamp": "2026-04-14T04:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "108e9343-a1bb-4df6-89a4-caeab7cfffd5",
+    "text": "Can I get an invoice for last month?",
+    "timestamp": "2026-03-30T02:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "c1716be3-c74c-46e2-b1d5-0922cd8316d0",
+    "text": "The analytics dashboard is completely broken and crashes.",
+    "timestamp": "2026-04-24T12:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "fe8ace8e-f62f-4c61-b023-1dcabb4815cd",
+    "text": "It would be great if the system could save custom views.",
+    "timestamp": "2026-04-26T02:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "dd509c7d-b884-42f5-9c76-1b48b8fa6048",
+    "text": "Is there a tutorial for reset my password?",
+    "timestamp": "2026-04-13T08:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "89dab41b-3cba-490f-99dd-2e3eb5e5efcd",
+    "text": "When does my subscription renew?",
+    "timestamp": "2026-04-24T01:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "a037636b-b334-4f81-ae2f-f767c3d14dbe",
+    "text": "Why isn't there an option to export reports to Excel automatically?",
+    "timestamp": "2026-04-26T21:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "1d5c987b-c86d-4c7b-bb2b-96a7dba094bc",
+    "text": "Why isn't there an option to export reports to Excel automatically?",
+    "timestamp": "2026-04-21T07:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "99ef9d2b-5fde-4717-9c53-13f76c979234",
+    "text": "Thank you for the quick support, the new analytics dashboard is great!",
+    "timestamp": "2026-04-09T11:55:10.807968",
+    "actual_category": "Feedback",
+    "actual_sentiment": "Positive"
+  },
+  {
+    "ticket_id": "6b7ed9e3-c088-4a84-8f75-1660a62f8765",
+    "text": "The mobile app is not loading on my screen.",
+    "timestamp": "2026-04-23T17:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "661bb5b4-8dc6-4643-82ae-054d656e1eac",
+    "text": "The analytics dashboard is completely broken and crashes.",
+    "timestamp": "2026-04-01T16:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "5cb23088-44ef-4634-8b46-6e3f0762d74b",
+    "text": "When does my subscription renew?",
+    "timestamp": "2026-04-15T07:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "741a99e0-c5f0-49b4-92ac-0174052cce29",
+    "text": "How do I add a new team member?",
+    "timestamp": "2026-04-26T18:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "31f592cc-98b9-4f2a-89e2-7dc040797955",
+    "text": "Thank you for the quick support, the new analytics dashboard is great!",
+    "timestamp": "2026-04-26T20:55:10.807968",
+    "actual_category": "Feedback",
+    "actual_sentiment": "Positive"
+  },
+  {
+    "ticket_id": "47cc1aa0-bf36-4b06-8ff8-212eddaebf19",
+    "text": "It would be great if the system could add a dark mode.",
+    "timestamp": "2026-04-23T01:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "120cdfc7-a04f-4fcc-907c-a81320e7f28b",
+    "text": "The notification system is completely broken and crashes.",
+    "timestamp": "2026-04-16T23:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "79ae8ed5-6d5e-47ff-b893-30b873965a88",
+    "text": "The mobile app is not loading on my screen.",
+    "timestamp": "2026-04-15T21:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "c32f602a-cc95-4242-8f4f-dbce4c7b5474",
+    "text": "I wish you had a feature to add a dark mode.",
+    "timestamp": "2026-04-26T10:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "0739b864-45e7-49e3-a188-97ed6255dccc",
+    "text": "I get an error message when I try to use notification system.",
+    "timestamp": "2026-04-04T14:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "ceb874d0-dbb3-4603-b5f2-37f2598ce6e6",
+    "text": "It would be great if the system could save custom views.",
+    "timestamp": "2026-04-03T06:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "5ccf66cc-1592-4600-be2d-f979f662149f",
+    "text": "I can't figure out how to reset my password. Please help.",
+    "timestamp": "2026-03-30T12:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "c8ab103b-ca31-4456-acee-36487d1610c5",
+    "text": "I can't figure out how to change my billing details. Please help.",
+    "timestamp": "2026-03-31T10:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "ba2401a0-2892-4d0d-a658-0a67f6a278f2",
+    "text": "The payment gateway is not loading on my screen.",
+    "timestamp": "2026-03-30T07:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "ef75f717-d8d9-462d-a92a-88fbb5bd2027",
+    "text": "How do I change my billing details?",
+    "timestamp": "2026-04-14T07:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "60285edf-bcea-4050-94eb-bcec9fb03dcb",
+    "text": "The payment gateway is completely broken and crashes.",
+    "timestamp": "2026-04-22T00:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "d56a4825-5283-4f8c-b726-182ef7306196",
+    "text": "The analytics dashboard is not loading on my screen.",
+    "timestamp": "2026-04-06T14:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "609fcb22-38d3-4700-b776-c7a5cba71485",
+    "text": "I'm confused about how to change my billing details.",
+    "timestamp": "2026-04-12T05:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "0080f583-b48c-4711-8106-79cfe9533d5b",
+    "text": "When does my subscription renew?",
+    "timestamp": "2026-04-06T16:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "ac95b168-0a42-4aee-9242-8748fd2cf357",
+    "text": "When does my subscription renew?",
+    "timestamp": "2026-04-01T06:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "e3a11795-cad3-4dcd-9ab4-fa68e64ab43c",
+    "text": "It would be great if the system could add a dark mode.",
+    "timestamp": "2026-04-19T02:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "cbc0bee9-9788-446d-bc65-d21ab1a1e545",
+    "text": "I can't figure out how to add a new team member. Please help.",
+    "timestamp": "2026-04-11T11:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "d8bee969-03e8-44fd-af96-e85c09db384e",
+    "text": "When does my subscription renew?",
+    "timestamp": "2026-04-24T13:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "5f71ef47-64d5-4d65-a824-827886210344",
+    "text": "I wish you had a feature to save custom views.",
+    "timestamp": "2026-04-23T23:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "f9376fdd-ec2d-4f52-bf55-d3c93a65a3fa",
+    "text": "I can't figure out how to add a new team member. Please help.",
+    "timestamp": "2026-04-04T21:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "0b70bf98-ec01-4799-b199-abbdd2c2a7b0",
+    "text": "I'm confused about how to reset my password.",
+    "timestamp": "2026-04-17T20:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "64e84483-c4fd-4b09-8385-47c78aaeb8bc",
+    "text": "The mobile app is not loading on my screen.",
+    "timestamp": "2026-04-16T15:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "6c9878e6-92c4-4784-a77e-a4234f75e192",
+    "text": "I can't figure out how to set up 2FA. Please help.",
+    "timestamp": "2026-04-18T17:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "0ffa6f70-b3f8-4fd0-9db2-0a812d3ab0d8",
+    "text": "Why isn't there an option to integrate with Slack?",
+    "timestamp": "2026-04-23T11:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "5cba27a9-ee17-46fa-80e8-a7386b463a55",
+    "text": "The login page is completely broken and crashes.",
+    "timestamp": "2026-04-03T15:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "aeedf0a2-2da9-4bef-b515-ccd7157f9673",
+    "text": "I get an error message when I try to use login page.",
+    "timestamp": "2026-04-06T12:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "ee89d5e1-8cdd-41f9-b917-4da92ba8edd0",
+    "text": "The login page is completely broken and crashes.",
+    "timestamp": "2026-04-02T19:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "3b48a20c-78cd-4deb-845b-10254d6224b3",
+    "text": "How do I configure the dashboard?",
+    "timestamp": "2026-04-23T17:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "bc753aa7-79bd-44d0-92b9-fd1d775a5d92",
+    "text": "I wish you had a feature to integrate with Slack.",
+    "timestamp": "2026-04-07T23:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "315fc8e9-2cfb-48c1-a701-e544a426ce0a",
+    "text": "I can't figure out how to configure the dashboard. Please help.",
+    "timestamp": "2026-04-12T18:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "dcfa3a3e-d554-454c-b0be-76202e4c4e8c",
+    "text": "Is there a tutorial for configure the dashboard?",
+    "timestamp": "2026-04-20T15:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "92f9c617-e4fe-4fdd-85f2-85a211a1e09d",
+    "text": "It would be great if the system could add a dark mode.",
+    "timestamp": "2026-04-13T00:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "8e7c2cd9-1bd1-4c87-b238-096063a96a65",
+    "text": "When does my subscription renew?",
+    "timestamp": "2026-04-07T16:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "734f0b14-a3f1-4a65-b451-928a173e9049",
+    "text": "Why isn't there an option to allow multi-user editing?",
+    "timestamp": "2026-04-24T11:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "cca03942-18f6-4495-b3a9-f1798662acd2",
+    "text": "I'm confused about how to configure the dashboard.",
+    "timestamp": "2026-04-21T04:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "4e089a6c-3a80-4518-b05c-1ff51995785c",
+    "text": "Can I get an invoice for last month?",
+    "timestamp": "2026-04-23T05:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "768d4748-50a7-493e-ad90-082fe18d9d96",
+    "text": "The notification system is completely broken and crashes.",
+    "timestamp": "2026-04-11T04:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "ab970ec6-7772-4947-add9-19e1e2313fe2",
+    "text": "Thank you for the quick support, the new notification system is great!",
+    "timestamp": "2026-04-21T01:55:10.807968",
+    "actual_category": "Feedback",
+    "actual_sentiment": "Positive"
+  },
+  {
+    "ticket_id": "695ad512-94fc-4c1c-b8ff-a9f0c48ff1de",
+    "text": "Is there a tutorial for change my billing details?",
+    "timestamp": "2026-04-02T02:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "57d480b5-e624-4cf5-8ea4-6da451b8ac44",
+    "text": "How do I configure the dashboard?",
+    "timestamp": "2026-03-30T20:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "e320a788-af66-40a5-a9fa-819f8be117ae",
+    "text": "I wish you had a feature to add a dark mode.",
+    "timestamp": "2026-04-05T21:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "6442f22f-9019-43ae-9847-8a7ae896cc68",
+    "text": "The notification system is completely broken and crashes.",
+    "timestamp": "2026-04-26T07:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "51ff105c-784a-427f-a4a1-d5db571a9c63",
+    "text": "Is there a tutorial for set up 2FA?",
+    "timestamp": "2026-04-09T02:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "11763b06-64c4-4684-827b-be1a5545eaa8",
+    "text": "Why isn't there an option to integrate with Slack?",
+    "timestamp": "2026-04-07T11:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "aa2689f6-d0c6-486e-a9c4-33a41c374fe7",
+    "text": "Thank you for the quick support, the new analytics dashboard is great!",
+    "timestamp": "2026-04-12T18:55:10.807968",
+    "actual_category": "Feedback",
+    "actual_sentiment": "Positive"
+  },
+  {
+    "ticket_id": "fde6d72b-0a6e-40d5-a794-44fcc68d20fa",
+    "text": "I get an error message when I try to use login page.",
+    "timestamp": "2026-04-18T21:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "7a1b6537-401a-4911-b45a-06d9f74749c0",
+    "text": "I get an error message when I try to use payment gateway.",
+    "timestamp": "2026-04-24T03:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "37715676-b8be-4908-a639-71023927c9fb",
+    "text": "Can I get an invoice for last month?",
+    "timestamp": "2026-04-09T08:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "ddd67505-8f1c-41e8-87ce-9be2f882b186",
+    "text": "Can I get an invoice for last month?",
+    "timestamp": "2026-04-09T17:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "d4ba70eb-1aac-4b9d-9f85-789f932b44f0",
+    "text": "Is there a tutorial for change my billing details?",
+    "timestamp": "2026-04-15T04:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "4012abc8-d193-4e7c-aaa4-79e587acb5f9",
+    "text": "I wish you had a feature to save custom views.",
+    "timestamp": "2026-04-22T01:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "44211ccb-ffb2-45d5-b426-602a04390c7e",
+    "text": "Is there a tutorial for set up 2FA?",
+    "timestamp": "2026-04-05T13:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "14d8e4b6-fd65-43b0-969e-05019377c743",
+    "text": "I wish you had a feature to add a dark mode.",
+    "timestamp": "2026-03-29T15:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "cab09d94-6118-425c-8208-8ad039b260fa",
+    "text": "It would be great if the system could add a dark mode.",
+    "timestamp": "2026-04-25T00:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "23c6b976-281c-4b0b-ac89-efe7eb627af5",
+    "text": "I can't figure out how to set up 2FA. Please help.",
+    "timestamp": "2026-04-02T21:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "177af386-5065-47af-8bd8-6e90ed8726a4",
+    "text": "Why isn't there an option to add a dark mode?",
+    "timestamp": "2026-04-28T06:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "e8894764-6f06-45ff-9051-29e69ed145c8",
+    "text": "When does my subscription renew?",
+    "timestamp": "2026-04-19T18:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "78894c99-4507-41bb-8e03-c771dd0f3f4c",
+    "text": "The payment gateway is completely broken and crashes.",
+    "timestamp": "2026-04-15T13:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "2864e71d-a18c-431b-9478-c2bad581093c",
+    "text": "Is there a tutorial for change my billing details?",
+    "timestamp": "2026-04-09T05:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "f0ce0dc3-0bf1-4041-bea8-5700bed9fefe",
+    "text": "The payment gateway is completely broken and crashes.",
+    "timestamp": "2026-04-18T03:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "1f3a7960-1189-4ea8-be07-a5678a1f8704",
+    "text": "I can't figure out how to set up 2FA. Please help.",
+    "timestamp": "2026-04-29T07:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "b5c0e121-25d8-47f1-8aa9-10c2700de4ae",
+    "text": "The mobile app is completely broken and crashes.",
+    "timestamp": "2026-04-16T23:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "78115d5d-5fb0-4d0b-98ef-a07ecd952d78",
+    "text": "I'm confused about how to add a new team member.",
+    "timestamp": "2026-04-18T14:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "1f33fc3a-9a3d-4301-9d63-9dc75c3ec275",
+    "text": "The payment gateway is not loading on my screen.",
+    "timestamp": "2026-04-16T01:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "113ae822-e8e3-41ce-b27f-9b43930c4c15",
+    "text": "It would be great if the system could integrate with Slack.",
+    "timestamp": "2026-04-03T19:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "16468048-e7d3-474b-84ba-ea42d6edd2b0",
+    "text": "Thank you for the quick support, the new login page is great!",
+    "timestamp": "2026-04-22T08:55:10.807968",
+    "actual_category": "Feedback",
+    "actual_sentiment": "Positive"
+  },
+  {
+    "ticket_id": "2e5f3f85-0c0f-4a35-bb61-a57f9a0202ba",
+    "text": "Is there a tutorial for configure the dashboard?",
+    "timestamp": "2026-04-02T16:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "907468d9-96f0-4742-bc46-fa99efed344c",
+    "text": "Why isn't there an option to integrate with Slack?",
+    "timestamp": "2026-04-23T20:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "440fcdef-3120-4480-a9db-8f31c5803fdb",
+    "text": "It would be great if the system could save custom views.",
+    "timestamp": "2026-04-06T01:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "0926f73b-97d2-4f74-9e04-2073d04b44b3",
+    "text": "How do I change my billing details?",
+    "timestamp": "2026-04-11T11:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "30fe5c4e-9257-4fb4-b550-15214f3ea7b6",
+    "text": "Can I get an invoice for last month?",
+    "timestamp": "2026-04-10T04:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "8dc2f6ef-2ab9-4603-ad63-dd5f7f97a2eb",
+    "text": "Is there a tutorial for change my billing details?",
+    "timestamp": "2026-04-28T06:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "75335af0-9bc5-4a7c-927e-8363fcd5814e",
+    "text": "When does my subscription renew?",
+    "timestamp": "2026-04-13T04:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "aed93e5b-48c7-4500-83b4-40574c1e3dff",
+    "text": "Thank you for the quick support, the new mobile app is great!",
+    "timestamp": "2026-04-16T14:55:10.807968",
+    "actual_category": "Feedback",
+    "actual_sentiment": "Positive"
+  },
+  {
+    "ticket_id": "dd747588-9f27-4888-b64e-d336d48738a1",
+    "text": "The analytics dashboard is completely broken and crashes.",
+    "timestamp": "2026-04-07T14:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "2a8ad1a1-d509-41ab-9daa-3671d590e529",
+    "text": "Can I get an invoice for last month?",
+    "timestamp": "2026-04-26T16:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "556fc3f8-493c-49c1-85a3-451a03740c9a",
+    "text": "Can I get an invoice for last month?",
+    "timestamp": "2026-04-20T20:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "6797bd9a-1b64-4998-8114-43d319923b7f",
+    "text": "The mobile app is completely broken and crashes.",
+    "timestamp": "2026-04-19T11:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "e9fff3f6-5cee-43d8-842f-73e83afda97b",
+    "text": "Is there a tutorial for configure the dashboard?",
+    "timestamp": "2026-04-19T04:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "7ad9748c-abb0-4366-b929-03ce5438bf01",
+    "text": "It would be great if the system could allow multi-user editing.",
+    "timestamp": "2026-04-25T00:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "a67de4c4-8449-4d76-8c02-6483b09a2686",
+    "text": "The login page is completely broken and crashes.",
+    "timestamp": "2026-04-25T22:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "4a5a1fd6-4ecd-4452-a522-89d23bc4bf45",
+    "text": "Can I get an invoice for last month?",
+    "timestamp": "2026-04-02T02:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "2916a583-2d18-4a28-b793-30a93f8ea9e6",
+    "text": "Why isn't there an option to export reports to Excel automatically?",
+    "timestamp": "2026-04-04T03:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "2a03e07d-cefc-41f1-8427-9cce5e1327c6",
+    "text": "When does my subscription renew?",
+    "timestamp": "2026-04-27T00:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "ad504c66-0e88-4dab-9914-ff03896fff54",
+    "text": "Is there a tutorial for add a new team member?",
+    "timestamp": "2026-04-15T02:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "93651d2b-eff0-4f50-a962-f3fdc4178dd6",
+    "text": "It would be great if the system could export reports to Excel automatically.",
+    "timestamp": "2026-04-17T23:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "e224b520-052e-40c7-8507-baffa0cc2a6e",
+    "text": "Thank you for the quick support, the new login page is great!",
+    "timestamp": "2026-04-21T21:55:10.807968",
+    "actual_category": "Feedback",
+    "actual_sentiment": "Positive"
+  },
+  {
+    "ticket_id": "00ce34c2-8fc2-45c4-ab6e-5f7b03fbaf78",
+    "text": "It would be great if the system could export reports to Excel automatically.",
+    "timestamp": "2026-03-30T17:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "fb332392-300c-44c5-a1bf-c12e86084be2",
+    "text": "The notification system is not loading on my screen.",
+    "timestamp": "2026-04-13T01:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "2917f152-bebd-47d8-b63b-a2ef8e48506d",
+    "text": "I wish you had a feature to integrate with Slack.",
+    "timestamp": "2026-04-13T11:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "3e521afa-c8aa-4eaf-9a6a-c15bc679d731",
+    "text": "I can't figure out how to add a new team member. Please help.",
+    "timestamp": "2026-04-26T19:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "9d82cdd6-7ec0-4280-808f-d0ba4e370f5a",
+    "text": "When does my subscription renew?",
+    "timestamp": "2026-04-25T15:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "cb06ff4d-1cf2-4ea6-b3c8-661bb79dcaa9",
+    "text": "Is there a tutorial for set up 2FA?",
+    "timestamp": "2026-04-28T14:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "6b31aeed-f350-4bc4-8ee3-8a3be70a3fcf",
+    "text": "Is there a tutorial for configure the dashboard?",
+    "timestamp": "2026-04-16T21:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "85d0cf32-b642-462c-a6da-ad21f6c14c04",
+    "text": "Is there a tutorial for configure the dashboard?",
+    "timestamp": "2026-04-13T15:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "d408e662-8c46-4439-80fc-58b969dbaa5c",
+    "text": "When does my subscription renew?",
+    "timestamp": "2026-03-31T13:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "72ffa702-3d65-464f-a980-21e6d914dc26",
+    "text": "Can I get an invoice for last month?",
+    "timestamp": "2026-04-12T16:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "e6525e12-abf7-4c81-a268-98fa983b95d8",
+    "text": "Is there a tutorial for change my billing details?",
+    "timestamp": "2026-04-07T05:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "c01b5ca9-30c7-4399-a1d3-c97f173380e3",
+    "text": "The notification system is completely broken and crashes.",
+    "timestamp": "2026-04-11T05:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "5de837ac-bb0d-46d6-8ba4-e62893b5fbdb",
+    "text": "I get an error message when I try to use login page.",
+    "timestamp": "2026-04-11T02:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "31a67e27-158e-46b4-890d-268108ea5b2b",
+    "text": "How do I reset my password?",
+    "timestamp": "2026-03-31T09:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "64b70cdf-76c7-4e6d-8b27-5a2500e7dd3f",
+    "text": "Thank you for the quick support, the new notification system is great!",
+    "timestamp": "2026-04-04T20:55:10.807968",
+    "actual_category": "Feedback",
+    "actual_sentiment": "Positive"
+  },
+  {
+    "ticket_id": "9790af33-bcf4-4cce-8138-bb1cb7334569",
+    "text": "When does my subscription renew?",
+    "timestamp": "2026-04-15T04:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "c4a031ae-ff58-4b90-ae41-2386bedbb34c",
+    "text": "Thank you for the quick support, the new notification system is great!",
+    "timestamp": "2026-03-29T14:55:10.807968",
+    "actual_category": "Feedback",
+    "actual_sentiment": "Positive"
+  },
+  {
+    "ticket_id": "4cd571fa-df68-4820-9412-760406a13144",
+    "text": "Why isn't there an option to add a dark mode?",
+    "timestamp": "2026-04-09T09:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "b3811206-d292-40af-b152-946fa813cee4",
+    "text": "Thank you for the quick support, the new mobile app is great!",
+    "timestamp": "2026-04-14T10:55:10.807968",
+    "actual_category": "Feedback",
+    "actual_sentiment": "Positive"
+  },
+  {
+    "ticket_id": "e43d2a3d-9f8d-449f-a199-20364d665f65",
+    "text": "I get an error message when I try to use payment gateway.",
+    "timestamp": "2026-03-30T20:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "bd9c5ee0-5857-4b6d-b7b4-866d21984269",
+    "text": "When does my subscription renew?",
+    "timestamp": "2026-04-18T20:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "1d3d9b42-6125-4dae-a090-70da148ef042",
+    "text": "Is there a tutorial for add a new team member?",
+    "timestamp": "2026-04-17T03:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "97a441fd-9491-404d-a057-449db74b206d",
+    "text": "I wish you had a feature to export reports to Excel automatically.",
+    "timestamp": "2026-04-19T23:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "0c6076ab-fba7-4e89-82ad-7a1c03538188",
+    "text": "I can't figure out how to configure the dashboard. Please help.",
+    "timestamp": "2026-04-11T08:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "5f65b8dd-06a8-4afd-93f6-2860d45d1c9e",
+    "text": "How do I configure the dashboard?",
+    "timestamp": "2026-04-13T00:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "dfad2b59-5f61-4fb4-9cb3-263055d555cb",
+    "text": "The notification system is not loading on my screen.",
+    "timestamp": "2026-04-19T13:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "c68946f3-4350-4f5f-890f-01cdd97fb376",
+    "text": "How do I set up 2FA?",
+    "timestamp": "2026-04-19T17:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "d908c6af-7b47-496b-bde1-3e48bade9312",
+    "text": "I can't figure out how to set up 2FA. Please help.",
+    "timestamp": "2026-04-12T10:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "4e9c905b-0c48-4128-9a4a-ba1d23ec606c",
+    "text": "I'm confused about how to change my billing details.",
+    "timestamp": "2026-04-06T03:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "3f8b4ab2-2da4-422f-ad31-539d86eba997",
+    "text": "I get an error message when I try to use login page.",
+    "timestamp": "2026-04-22T14:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "f8059a16-0d1c-43b8-a8a1-f43035c5d4e2",
+    "text": "When does my subscription renew?",
+    "timestamp": "2026-04-08T14:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "b4c986af-3bbc-4880-b451-e7a6048569fd",
+    "text": "When does my subscription renew?",
+    "timestamp": "2026-04-22T19:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "03daa2fc-c729-41d9-8450-149164da89d4",
+    "text": "Why isn't there an option to integrate with Slack?",
+    "timestamp": "2026-04-08T14:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "f508b2fc-e065-4767-8cd9-5e399d097597",
+    "text": "I can't figure out how to add a new team member. Please help.",
+    "timestamp": "2026-04-08T05:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "56ffe13e-2e9a-4010-aac0-72f5c810fe6f",
+    "text": "I can't figure out how to set up 2FA. Please help.",
+    "timestamp": "2026-04-22T08:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "2702e804-16ea-4543-afe8-496ebe310c06",
+    "text": "Is there a tutorial for change my billing details?",
+    "timestamp": "2026-04-09T02:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "0fcbd8ca-0632-4e6c-a7a0-240f840faad5",
+    "text": "Can I get an invoice for last month?",
+    "timestamp": "2026-04-05T14:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "961c6718-1515-4846-b8fe-8e6432c20583",
+    "text": "When does my subscription renew?",
+    "timestamp": "2026-04-26T13:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "63764cd5-30aa-421b-a3b8-31e02e023f80",
+    "text": "I get an error message when I try to use analytics dashboard.",
+    "timestamp": "2026-04-08T13:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "e4c2bf67-39d2-4acf-a85a-2684eb995519",
+    "text": "Can I get an invoice for last month?",
+    "timestamp": "2026-04-02T14:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "2fb42312-b9a3-4617-9374-04206b412e41",
+    "text": "Thank you for the quick support, the new payment gateway is great!",
+    "timestamp": "2026-04-20T22:55:10.807968",
+    "actual_category": "Feedback",
+    "actual_sentiment": "Positive"
+  },
+  {
+    "ticket_id": "4e9fdfc1-8fc3-402d-8852-e6b724274f8f",
+    "text": "The notification system is not loading on my screen.",
+    "timestamp": "2026-04-05T19:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "cbc02e8e-abc5-4d06-8c92-81ef430fd9b7",
+    "text": "Why isn't there an option to save custom views?",
+    "timestamp": "2026-04-22T22:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "e654dee1-b654-436a-8db1-98e800ddd348",
+    "text": "Is there a tutorial for change my billing details?",
+    "timestamp": "2026-04-18T00:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "09c65342-a969-4b21-af0f-2fbf188a2462",
+    "text": "I wish you had a feature to add a dark mode.",
+    "timestamp": "2026-04-23T06:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "29e795b4-0075-432c-8666-5a261dcec7b8",
+    "text": "When does my subscription renew?",
+    "timestamp": "2026-04-25T18:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "85de3b4d-d3c7-4cd2-82f4-8eeda399761f",
+    "text": "Can I get an invoice for last month?",
+    "timestamp": "2026-04-18T15:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "c7eadbe6-cb8d-46c5-b249-a007912f78c2",
+    "text": "How do I set up 2FA?",
+    "timestamp": "2026-04-08T22:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "db7d599f-42fb-4ff7-8e4c-dae627532d30",
+    "text": "I wish you had a feature to add a dark mode.",
+    "timestamp": "2026-04-18T16:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "a385a69f-cf7e-4243-b6c1-e1eccb8203fc",
+    "text": "It would be great if the system could save custom views.",
+    "timestamp": "2026-04-28T08:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "f8e42a00-b5fa-4fb2-9c11-797e26f22096",
+    "text": "I'm confused about how to add a new team member.",
+    "timestamp": "2026-04-22T03:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "8bb39be1-ac60-488a-8989-6afaada37cc7",
+    "text": "I can't figure out how to change my billing details. Please help.",
+    "timestamp": "2026-04-26T23:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "19d465dd-4f94-4da9-9c0b-fd527f95d513",
+    "text": "I get an error message when I try to use payment gateway.",
+    "timestamp": "2026-04-14T04:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "e5fab97b-a7a9-4ea7-8a03-fc739f364f89",
+    "text": "The payment gateway is not loading on my screen.",
+    "timestamp": "2026-04-29T03:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "342e1a66-1cb1-47aa-b7b1-9c7837568c39",
+    "text": "The analytics dashboard is not loading on my screen.",
+    "timestamp": "2026-04-06T08:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "9a72e076-ec70-42a1-91b8-d4394ebdc6fc",
+    "text": "Thank you for the quick support, the new analytics dashboard is great!",
+    "timestamp": "2026-04-08T20:55:10.807968",
+    "actual_category": "Feedback",
+    "actual_sentiment": "Positive"
+  },
+  {
+    "ticket_id": "c76c1947-e0b6-4b66-b3fb-5074505d7f90",
+    "text": "Thank you for the quick support, the new mobile app is great!",
+    "timestamp": "2026-04-09T13:55:10.807968",
+    "actual_category": "Feedback",
+    "actual_sentiment": "Positive"
+  },
+  {
+    "ticket_id": "8137b4b6-4ff2-4776-befc-3fa8ebbf554e",
+    "text": "Is there a tutorial for set up 2FA?",
+    "timestamp": "2026-04-04T14:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "f36458e0-7390-44e5-85ef-8a6a2bf61a92",
+    "text": "Thank you for the quick support, the new mobile app is great!",
+    "timestamp": "2026-04-27T23:55:10.807968",
+    "actual_category": "Feedback",
+    "actual_sentiment": "Positive"
+  },
+  {
+    "ticket_id": "a05acefb-be03-4d2c-983a-2d6d7db4c272",
+    "text": "How do I add a new team member?",
+    "timestamp": "2026-04-13T05:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "5b79c71c-e515-4da8-bc75-1fe741c85555",
+    "text": "When does my subscription renew?",
+    "timestamp": "2026-04-12T02:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "0922c65e-47a1-4660-90a9-a5206d9d04bf",
+    "text": "Why isn't there an option to integrate with Slack?",
+    "timestamp": "2026-04-17T22:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "3b1b2746-64d8-4381-bfcd-b65356eacdef",
+    "text": "The analytics dashboard is completely broken and crashes.",
+    "timestamp": "2026-04-02T10:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "e0712c0d-64c3-46a1-af16-cb7ffdefbb51",
+    "text": "Why isn't there an option to integrate with Slack?",
+    "timestamp": "2026-04-15T10:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "d73712a2-dfd9-420a-85fd-368fc1c1926b",
+    "text": "When does my subscription renew?",
+    "timestamp": "2026-04-03T21:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "51068092-9b99-42d5-8327-23313951a0cf",
+    "text": "The payment gateway is completely broken and crashes.",
+    "timestamp": "2026-04-08T22:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "fe64452e-e33b-4cb4-9f82-d5a37ae78cfb",
+    "text": "I can't figure out how to reset my password. Please help.",
+    "timestamp": "2026-04-22T04:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "61f99047-6a08-49df-b785-a8f19fb0ced0",
+    "text": "Is there a tutorial for set up 2FA?",
+    "timestamp": "2026-04-14T23:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "73766912-36df-4aeb-a622-ffea310eb6fb",
+    "text": "When does my subscription renew?",
+    "timestamp": "2026-04-02T23:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "d3236e09-046e-4770-8a26-72cc76546b10",
+    "text": "I wish you had a feature to add a dark mode.",
+    "timestamp": "2026-04-06T04:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "1871a71c-dea8-4700-8c3d-54c0c13c0d19",
+    "text": "When does my subscription renew?",
+    "timestamp": "2026-04-02T18:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "2c46f8cc-e7a4-447e-9a2a-1d0fd7ffabed",
+    "text": "I get an error message when I try to use notification system.",
+    "timestamp": "2026-04-24T22:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "bed8538e-88ac-445f-9c44-012c3d16d0b4",
+    "text": "The login page is completely broken and crashes.",
+    "timestamp": "2026-04-17T21:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "98f7fcb0-299b-4465-8f9b-5bdb77193b89",
+    "text": "The analytics dashboard is not loading on my screen.",
+    "timestamp": "2026-04-09T14:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "0fa6dbdf-30c6-4f07-9770-86438300d9b7",
+    "text": "Thank you for the quick support, the new mobile app is great!",
+    "timestamp": "2026-04-21T01:55:10.807968",
+    "actual_category": "Feedback",
+    "actual_sentiment": "Positive"
+  },
+  {
+    "ticket_id": "a50422e6-819f-4956-a23b-942484d60ff3",
+    "text": "When does my subscription renew?",
+    "timestamp": "2026-04-16T02:55:10.807968",
+    "actual_category": "Inquiry",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "6f024ff2-f3a3-435f-bad2-6e9ae13a7d1d",
+    "text": "How do I add a new team member?",
+    "timestamp": "2026-04-03T13:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "41ae6bfe-5d25-4042-9077-ef5dafd5428e",
+    "text": "I get an error message when I try to use mobile app.",
+    "timestamp": "2026-04-28T06:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "83c2c141-a72b-4a10-a702-b722681e1779",
+    "text": "Why isn't there an option to integrate with Slack?",
+    "timestamp": "2026-04-15T18:55:10.807968",
+    "actual_category": "Product Gap",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "ae91655e-1fd0-45f5-8469-cb183867f1ce",
+    "text": "Is there a tutorial for configure the dashboard?",
+    "timestamp": "2026-04-07T21:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Neutral"
+  },
+  {
+    "ticket_id": "b754e3b7-baef-404d-b173-53f439819b0a",
+    "text": "The mobile app is not loading on my screen.",
+    "timestamp": "2026-04-20T18:55:10.807968",
+    "actual_category": "Bug",
+    "actual_sentiment": "Negative"
+  },
+  {
+    "ticket_id": "3e8ccd37-3032-41eb-9c9a-e78454ba5389",
+    "text": "I can't figure out how to configure the dashboard. Please help.",
+    "timestamp": "2026-04-01T02:55:10.807968",
+    "actual_category": "Training Need",
+    "actual_sentiment": "Negative"
+  }
+]
