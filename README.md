@@ -45,22 +45,84 @@ Uses Unsupervised NLP (TF-IDF & NMF) to group tickets and find recurring themes.
 Once the server is running (`python -m uvicorn main:app --reload`), access the interactive dashboard at `http://127.0.0.1:8000/docs`.
 
 ### 1. Analyze New Ticket (Real-Time)
-`POST /api/v1/tickets/analyze`
-* **Purpose:** Built for Zendesk Webhooks. Send a new ticket's text, and instantly receive the predicted Category, Sentiment, and Tone.
-* **Input:** `{ "text": "I am locked out of the portal!" }`
-* **Output:** JSON containing `sentiment`, `tone`, `sentiment_score`, and the ML-predicted `category`.
+**`POST /api/v1/tickets/analyze`**
+* **Purpose:** Built for Zendesk Webhooks. Send a new ticket's text, and instantly receive the predicted Category, Sentiment, and Tone via the Machine Learning model.
+* **Input Payload (JSON):**
+  ```json
+  {
+    "text": "Hello, I cannot find the MedStar location in the Explore section."
+  }
+  ```
+* **Output Response (JSON):**
+  ```json
+  {
+    "sentiment": "Positive",
+    "tone": "Low",
+    "sentiment_score": 0.4588,
+    "category": "exploring_internships"
+  }
+  ```
 
 ### 2. Lookup Processed Ticket
-`GET /api/v1/tickets/{ticket_id}`
-* **Purpose:** Fetch the full details and NLP analysis of a specific Zendesk ticket stored in the local database.
+**`GET /api/v1/tickets/{ticket_id}`**
+* **Purpose:** Fetch the full details, history, and NLP analysis of a specific Zendesk ticket stored in the local SQLite database.
+* **Input:** The `{ticket_id}` parameter in the URL (e.g., `/api/v1/tickets/348975`).
+* **Output Response (JSON):**
+  ```json
+  {
+    "ticket_id": "348975",
+    "text": "Clinical Site Location...",
+    "timestamp": "2026-04-29T19:27:55Z",
+    "actual_category": null,
+    "actual_sentiment": null,
+    "id": 212,
+    "category": "exploring_internships",
+    "sentiment": "Positive",
+    "sentiment_score": 0.9972
+  }
+  ```
 
-### 3. Bulk Upload
-`POST /api/v1/tickets/upload`
-* **Purpose:** Upload a raw Zendesk CSV export to process thousands of tickets at once and store them in the database.
+### 3. Fetch All Processed Tickets
+**`GET /api/v1/tickets`**
+* **Purpose:** Retrieve an array of all tickets currently stored in the database. Supports pagination via query parameters.
+* **Parameters:** `?skip=0&limit=100` (Defaults to 100 tickets).
+* **Output Response:** Array of ticket JSON objects (same structure as Lookup Processed Ticket).
 
-### 4. Fetch Global Trends
-`GET /api/v1/insights/trends`
-* **Purpose:** Returns global distributions for Tone, Sentiment, Categories, and the auto-generated Topic Models.
+### 4. Bulk Upload
+**`POST /api/v1/tickets/upload`**
+* **Purpose:** Upload a raw Zendesk CSV export to process hundreds of tickets at once, train the model, and store them in the database for trend analysis.
+* **Input:** `multipart/form-data` containing the Zendesk `.csv` file.
+* **Output Response (JSON):**
+  ```json
+  {
+    "message": "Upload successful",
+    "processed": 59
+  }
+  ```
+
+### 5. Fetch Global Trends
+**`GET /api/v1/insights/trends`**
+* **Purpose:** Returns comprehensive global distributions for Tone, Sentiment, Categories, and auto-generated Unsupervised Topic Models.
+* **Output Response (JSON excerpt):**
+  ```json
+  {
+    "total_tickets": 59,
+    "sentiment_distribution": {
+      "Neutral": 10,
+      "Negative": 5,
+      "Positive": 44
+    },
+    "top_categories": [
+      {
+        "category": "login",
+        "count": 22,
+        "percentage": 37.28
+      }
+    ],
+    "product_gap_trends": [],
+    "training_need_trends": []
+  }
+  ```
 
 ---
 
