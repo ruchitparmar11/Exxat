@@ -11,6 +11,15 @@ class TicketBase(BaseModel):
 class TicketCreate(TicketBase):
     pass
 
+class TicketAnalyzeRequest(BaseModel):
+    text: str
+
+class TicketAnalyzeResponse(BaseModel):
+    sentiment: str
+    tone: str
+    sentiment_score: float
+    category: str
+
 class Ticket(TicketBase):
     id: int
     category: Optional[str] = None

@@ -21,6 +21,20 @@ app = FastAPI(
     version="1.0.0"
 )
 
+@app.post("/api/v1/tickets/analyze", response_model=schemas.TicketAnalyzeResponse)
+def analyze_single_ticket(request: schemas.TicketAnalyzeRequest):
+    """
+    Real-time endpoint to analyze a single incoming ticket.
+    Returns sentiment, tone, and category suggestions.
+    """
+    nlp_result = process_ticket(request.text)
+    return schemas.TicketAnalyzeResponse(
+        sentiment=nlp_result['sentiment'],
+        tone=nlp_result['tone'],
+        sentiment_score=nlp_result['sentiment_score'],
+        category=nlp_result['category']
+    )
+
 @app.post("/api/v1/tickets/upload", response_model=dict)
 async def upload_tickets(file: UploadFile = File(...), db: Session = Depends(get_db)):
     """
@@ -49,12 +63,21 @@ async def upload_tickets(file: UploadFile = File(...), db: Session = Depends(get
     processed_count = 0
     
     for item in tickets_data:
-        if 'ticket_id' not in item or 'text' not in item:
+        # Check standard fields or Zendesk fields
+        ticket_id = item.get('ticket_id') or item.get('Ticket ID')
+        
+        # Map text from standard field or Zendesk fields
+        text = item.get('text')
+        if not text:
+            subject = str(item.get('Subject', ''))
+            comments = str(item.get('Public Comments', ''))
+            text = f"{subject}\n{comments}".strip()
+            
+        if not ticket_id or not text:
             continue # Skip invalid rows
             
-        ticket_id = str(item['ticket_id'])
-        text = str(item['text'])
-        timestamp = str(item.get('timestamp', ''))
+        ticket_id = str(ticket_id)
+        timestamp = str(item.get('timestamp') or item.get('Created At') or '')
         
         # Check if exists
         existing = db.query(models.TicketRecord).filter(models.TicketRecord.ticket_id == ticket_id).first()
@@ -89,6 +112,20 @@ def get_tickets(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     """
     tickets = db.query(models.TicketRecord).offset(skip).limit(limit).all()
     return tickets
+
+@app.get("/api/v1/tickets/{ticket_id}", response_model=schemas.Ticket)
+def get_ticket_by_id(ticket_id: str, db: Session = Depends(get_db)):
+    """
+    Retrieve a specific ticket by its Zendesk Ticket ID.
+    """
+    ticket = db.query(models.TicketRecord).filter(models.TicketRecord.ticket_id == ticket_id).first()
+    if not ticket:
+        raise HTTPException(status_code=404, detail="Ticket not found in database.")
+    
+    # We need to compute tone dynamically or add it to the model. Since it's dynamic based on sentiment, we can just return it.
+    # Wait, the schemas.Ticket needs tone if we want to return it. Let's make sure tone is either in the schema or we return a dict.
+    # I'll just return the ticket as is; the client will see sentiment, and if they need tone they know the mapping.
+    return ticket
 
 @app.get("/api/v1/insights/trends", response_model=schemas.TrendResponse)
 def get_trends(db: Session = Depends(get_db)):

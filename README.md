@@ -1,65 +1,94 @@
-# Insight Engine 🚀
+# Zendesk Insight Engine
 
-Insight Engine is a lightweight, high-performance FastAPI application designed to automatically process customer support tickets. It uses **Classical NLP Algorithms** (NLTK & scikit-learn)—meaning it requires **no external LLMs, API keys, or expensive hosted models**.
+A privacy-first, real-time Machine Learning and NLP engine designed specifically for analyzing Zendesk support tickets. This system runs 100% locally (no third-party LLM APIs) to ensure complete data privacy for sensitive client interactions.
 
-This engine specializes in extracting actionable insights, categorizing issues into **Product Gaps** and **Training Needs**, and correlating them with **Customer Sentiment Trends**.
+## 🚀 Features
 
-## Features
-- **Zero-LLM Architecture**: High privacy, zero API costs, and runs locally using optimized algorithms.
-- **Sentiment Analysis**: Uses NLTK's VADER to assign sentiment polarity (Positive, Neutral, Negative).
-- **Heuristic Taxonomy**: Rule-based categorization into specific buckets like Bugs, Inquiries, Product Gaps, etc.
-- **Trend Topic Modeling**: Uses TF-IDF and Non-Negative Matrix Factorization (NMF) to find exact recurring themes inside Product Gaps and Training Needs.
-- **Scalable Database**: Built with SQLAlchemy, currently using SQLite for zero-setup execution, but fully decoupled to swap to MongoDB.
+### 1. Real-Time Machine Learning Categorization
+Instead of relying on rigid keyword rules, this engine uses a **Supervised Machine Learning Classifier** (`LinearSVC` via `scikit-learn`). 
+* It is trained directly on your historical Zendesk CSV exports.
+* It learns your exact internal taxonomy (e.g., `schedules`, `login`, `student_onboarding`, `exploring_internships`).
+* When a new ticket arrives, it predicts the correct category instantly (in milliseconds).
 
-## Installation & Setup
+### 2. Intelligent Tone & Urgency Detection
+It uses VADER Sentiment Analysis upgraded with **Customer Support Urgency Heuristics**.
+* **Negative Sentiment ➡️ High Tone**: Automatically flags frustrated or angry clients as High Priority.
+* **Neutral Sentiment ➡️ Medium Tone**: Standard questions and updates.
+* **Positive Sentiment ➡️ Low Tone**: Polite inquiries or "thank you" messages.
+* **Urgency Override**: If a client uses polite words but includes urgency keywords (e.g., "urgent", "unacceptable", "escalate", "blocking"), the engine forcefully overrides the math to guarantee a **High Tone** escalation.
 
-1. **Clone the repository:**
+### 3. Clean Topic Modeling (Trend Extraction)
+Uses Unsupervised NLP (TF-IDF & NMF) to group tickets and find recurring themes.
+* Includes a robust regex cleaner to strip out Zendesk chat timestamps (e.g., `(4:14:43 PM)`), system metadata, and common email fluff (e.g., "Regards", ".com").
+* Extracts sharp, actionable keywords for Product Gaps and Training Needs.
+
+---
+
+## 🛠️ System Architecture
+
+* **Framework:** FastAPI (Python)
+* **Database:** SQLite (SQLAlchemy)
+* **NLP & ML Stack:** `scikit-learn`, `nltk` (VADER), `pandas`
+* **Model Format:** `joblib` (`category_model.pkl`)
+
+### Core Files
+* `main.py`: The FastAPI server containing all REST endpoints.
+* `nlp_engine.py`: The "Brain". Handles ML model loading, sentiment analysis, tone mapping, and topic modeling.
+* `train_model.py`: The script used to train the ML model on your Zendesk CSV.
+* `process_zendesk_export.py`: A standalone script to generate Markdown reports (`zendesk_insights.md`) from CSVs.
+* `update_db.py`: A utility script to retroactively update old database records using the newest ML model.
+
+---
+
+## 🌐 API Endpoints
+
+Once the server is running (`python -m uvicorn main:app --reload`), access the interactive dashboard at `http://127.0.0.1:8000/docs`.
+
+### 1. Analyze New Ticket (Real-Time)
+`POST /api/v1/tickets/analyze`
+* **Purpose:** Built for Zendesk Webhooks. Send a new ticket's text, and instantly receive the predicted Category, Sentiment, and Tone.
+* **Input:** `{ "text": "I am locked out of the portal!" }`
+* **Output:** JSON containing `sentiment`, `tone`, `sentiment_score`, and the ML-predicted `category`.
+
+### 2. Lookup Processed Ticket
+`GET /api/v1/tickets/{ticket_id}`
+* **Purpose:** Fetch the full details and NLP analysis of a specific Zendesk ticket stored in the local database.
+
+### 3. Bulk Upload
+`POST /api/v1/tickets/upload`
+* **Purpose:** Upload a raw Zendesk CSV export to process thousands of tickets at once and store them in the database.
+
+### 4. Fetch Global Trends
+`GET /api/v1/insights/trends`
+* **Purpose:** Returns global distributions for Tone, Sentiment, Categories, and the auto-generated Topic Models.
+
+---
+
+## 🧠 How to Train the Model
+
+As you handle more tickets in Zendesk, you can make the AI smarter by re-training it on your latest data.
+
+1. Export your latest tickets from Zendesk as a CSV (must include `Subject`, `Public Comments`, and `Main Category`).
+2. Save it to the project folder as `zendesk_tickets_export...csv` (update the filename in `train_model.py` if needed).
+3. Run the training script:
    ```bash
-   git clone <your-repo-url>
-   cd "Trends engine"
+   python train_model.py
    ```
+4. The script will generate a new `category_model.pkl`. FastAPI will automatically detect the new file and update the real-time endpoint instantly!
 
-2. **Install dependencies:**
-   Make sure you have Python 3.9+ installed.
-   ```bash
-   pip install -r requirements.txt
-   ```
+---
 
-3. **Download NLP data:**
-   ```bash
-   python -c "import nltk; nltk.download('vader_lexicon'); nltk.download('punkt')"
-   ```
+## 🔒 Privacy Notice
+This engine is completely air-gapped. All Machine Learning models run locally on the host CPU. No customer data is ever sent to OpenAI, Google Cloud, or AWS.
 
-## Running the Application
+---
 
-1. Start the FastAPI development server:
-   ```bash
-   python -m uvicorn main:app --reload
-   ```
+## 🚀 Future Goals: Phase 2 (Zendesk Integration & Agent Assist)
 
-2. Open your browser to access the interactive API dashboard:
-   [http://localhost:8000/docs](http://localhost:8000/docs)
-
-## API Endpoints
-- `POST /api/v1/tickets/upload`: Upload your `.csv` or `.json` file containing `{ticket_id, text}` arrays.
-- `GET /api/v1/insights/trends`: Get the global analytics, broken down into specific themes for Product Gaps and Training Needs, correlated with sentiment.
-- `GET /api/v1/tickets`: View the raw processed tickets in the database.
-
-## Implementation Plans
-
-### Phase 1: Insight Engine
-- [x] Set up FastAPI framework and routing architecture.
-- [x] Develop zero-LLM NLP processing pipeline using NLTK (VADER Sentiment Analysis).
-- [x] Implement heuristic categorization engine (Bugs, Product Gaps, Training Needs).
-- [x] Build unsupervised topic modeling using TF-IDF and NMF for trend extraction.
-- [x] Create local SQLite database integration via SQLAlchemy.
-- [x] Build API endpoints for bulk ticket upload (`/api/v1/tickets/upload`).
-- [x] Build API endpoints for analytics retrieval (`/api/v1/insights/trends`).
-
-### Phase 2: Zendesk Integration & Agent Assist
-- [ ] Develop Zendesk Webhook integration for real-time, event-driven ticket ingestion.
-- [ ] Implement TF-IDF Cosine Similarity to match incoming tickets with past resolved issues.
-- [ ] Create an API endpoint to serve instant historic solutions to agents.
-- [ ] Build and deploy a Zendesk Sidebar App to interface with the Insight Engine.
-- [ ] Migrate from SQLite to a production-grade database (MongoDB or PostgreSQL).
-- [ ] Deploy the API to a scalable cloud environment.
+To evolve this Insight Engine into a fully integrated support tool, the following steps are planned for Phase 2:
+* **Webhook Integration:** Develop Zendesk Webhook integration for real-time, event-driven ticket ingestion.
+* **Smart Solution Matching:** Implement TF-IDF Cosine Similarity to match incoming tickets with past resolved issues.
+* **Agent Assist API:** Create an API endpoint to serve instant historic solutions directly to support agents.
+* **UI Integration:** Build and deploy a Zendesk Sidebar App to seamlessly interface with the Insight Engine.
+* **Database Migration:** Migrate from SQLite to a production-grade database (MongoDB or PostgreSQL).
+* **Cloud Deployment:** Deploy the API to a scalable, secure cloud environment.
