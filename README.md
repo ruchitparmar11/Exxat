@@ -140,6 +140,17 @@ As you handle more tickets in Zendesk, you can make the AI smarter by re-trainin
 
 ---
 
+## 📅 Daily Updates / Changelog
+
+### May 2, 2026
+* **API Filtering:** Added `sentiment` filtering to `GET /api/v1/tickets` to easily retrieve tickets by sentiment type.
+* **Deep Analysis Trends:** Updated `GET /api/v1/insights/trends` to return exact lists of `ticket_ids` tied to each sentiment and category so analysts can dive into specific tickets driving the trends.
+* **Sentiment Reasoning:** Upgraded the NLP Engine to provide a specific `sentiment_reason` (e.g., listing frustration words or positive keywords) explaining exactly *why* a sentiment was chosen. Exposed this via API and Database.
+* **Analyst Standard Fields:** Built an auto-extractor for Zendesk **Standard Fields**. The NLP Engine now attempts to pre-fill critical fields (like `Priority`, `Severity`, `Product`, `Ticket summary`) into a `standard_fields` JSON object attached to every ticket, speeding up the Product Analyst workflow.
+* **Data Refresh:** Wiped existing database records and locked ingestion specifically to the `zendesk_tickets_export_20260501_090018.csv` file.
+
+---
+
 ## 🔒 Privacy Notice
 This engine is completely air-gapped. All Machine Learning models run locally on the host CPU. No customer data is ever sent to OpenAI, Google Cloud, or AWS.
 

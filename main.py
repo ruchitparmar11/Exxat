@@ -1,7 +1,7 @@
 import json
 import csv
 from io import StringIO
-from typing import List
+from typing import List, Optional
 from fastapi import FastAPI, UploadFile, File, Depends, HTTPException
 from sqlalchemy.orm import Session
 import pandas as pd
@@ -32,7 +32,9 @@ def analyze_single_ticket(request: schemas.TicketAnalyzeRequest):
         sentiment=nlp_result['sentiment'],
         tone=nlp_result['tone'],
         sentiment_score=nlp_result['sentiment_score'],
-        category=nlp_result['category']
+        sentiment_reason=nlp_result['sentiment_reason'],
+        category=nlp_result['category'],
+        standard_fields=nlp_result['standard_fields']
     )
 
 @app.post("/api/v1/tickets/upload", response_model=dict)
@@ -95,6 +97,8 @@ async def upload_tickets(file: UploadFile = File(...), db: Session = Depends(get
             category=nlp_result['category'],
             sentiment=nlp_result['sentiment'],
             sentiment_score=nlp_result['sentiment_score'],
+            sentiment_reason=nlp_result['sentiment_reason'],
+            standard_fields=nlp_result['standard_fields'],
             actual_category=item.get('actual_category'),
             actual_sentiment=item.get('actual_sentiment')
         )
@@ -106,11 +110,14 @@ async def upload_tickets(file: UploadFile = File(...), db: Session = Depends(get
     return {"message": "Upload successful", "processed": processed_count}
 
 @app.get("/api/v1/tickets", response_model=List[schemas.Ticket])
-def get_tickets(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+def get_tickets(sentiment: Optional[str] = None, skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     """
-    Retrieve processed tickets.
+    Retrieve processed tickets. Optional filter by sentiment.
     """
-    tickets = db.query(models.TicketRecord).offset(skip).limit(limit).all()
+    query = db.query(models.TicketRecord)
+    if sentiment:
+        query = query.filter(models.TicketRecord.sentiment == sentiment)
+    tickets = query.offset(skip).limit(limit).all()
     return tickets
 
 @app.get("/api/v1/tickets/{ticket_id}", response_model=schemas.Ticket)
@@ -149,16 +156,29 @@ def get_trends(db: Session = Depends(get_db)):
     # 2. Aggregate Sentiments Global
     sentiments = [t.sentiment for t in tickets if t.sentiment]
     sentiment_counts = Counter(sentiments)
-    sentiment_distribution = dict(sentiment_counts)
+    
+    sentiment_distribution = {}
+    for s, count in sentiment_counts.items():
+        sentiment_distribution[s] = {"count": count, "ticket_ids": []}
+        
+    for t in tickets:
+        if t.sentiment in sentiment_distribution:
+            sentiment_distribution[t.sentiment]["ticket_ids"].append(t.ticket_id)
     
     # 3. Sentiment by Category Breakdown
     category_sentiments = {}
     for cat in cat_counts.keys():
-        category_sentiments[cat] = {"Positive": 0, "Neutral": 0, "Negative": 0}
+        category_sentiments[cat] = {
+            "positive": 0, "neutral": 0, "negative": 0,
+            "positive_tickets": [], "neutral_tickets": [], "negative_tickets": []
+        }
         
     for t in tickets:
         if t.category and t.sentiment:
-            category_sentiments[t.category][t.sentiment] += 1
+            s = t.sentiment.lower()
+            if s in ["positive", "neutral", "negative"]:
+                category_sentiments[t.category][s] += 1
+                category_sentiments[t.category][f"{s}_tickets"].append(t.ticket_id)
             
     # 4. Extract Specific Trends for Product Gaps
     product_gap_texts = [t.text for t in tickets if t.category == "Product Gap"]

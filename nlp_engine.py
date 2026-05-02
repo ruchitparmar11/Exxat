@@ -42,24 +42,40 @@ def analyze_sentiment(text: str):
                            'disappointed', 'terrible', 'awful', 'cancel', 'refund', 'angry', 
                            'stuck', 'blocking', 'escalate', 'broken']
     
-    # If any strong frustration/urgency words are used, heavily penalize the compound score
-    # to guarantee it gets marked as Negative (which triggers a High Tone escalation)
+    found_frustration = []
     for kw in frustration_keywords:
         if re.search(r'\b' + kw + r'\b', text_lower):
             compound -= 0.5  # Push score strongly negative
-            break
+            found_frustration.append(kw)
             
     # Cap compound score at -1.0
     compound = max(-1.0, compound)
+    
+    # Extract VADER words for reason
+    words = re.findall(r'\b\w+\b', text_lower)
+    pos_words = [w for w in set(words) if w in sia.lexicon and sia.lexicon[w] > 0]
+    neg_words = [w for w in set(words) if w in sia.lexicon and sia.lexicon[w] < 0]
 
     if compound >= 0.05:
         category = "Positive"
+        reason = "Language indicates positive sentiment."
+        if pos_words:
+            reason += f" Detected positive keywords: {', '.join(pos_words)}."
     elif compound <= -0.05:
         category = "Negative"
+        reason_parts = []
+        if found_frustration:
+            reason_parts.append(f"Frustration/urgency keywords: {', '.join(found_frustration)}.")
+        if neg_words:
+            reason_parts.append(f"Negative keywords: {', '.join(neg_words)}.")
+        if not reason_parts:
+            reason_parts.append("Language indicates negative sentiment.")
+        reason = " ".join(reason_parts)
     else:
         category = "Neutral"
+        reason = "Language is neutral; no strong positive or negative sentiment detected."
         
-    return category, compound
+    return category, compound, reason
 
 def assign_category(text: str):
     """
@@ -126,11 +142,50 @@ def extract_trends(texts, n_topics=3, n_top_words=5):
         
     return topics
 
+def extract_standard_fields(text: str, category: str, sentiment: str, tone: str):
+    text_lower = text.lower()
+    
+    # Priority Heuristic
+    priority = "Normal"
+    if tone == "High" or "urgent" in text_lower or "escalate" in text_lower:
+        priority = "High"
+    if "asap" in text_lower or "immediately" in text_lower or "blocking" in text_lower:
+        priority = "Urgent"
+        
+    # Ticket Summary (First 15 words)
+    words = text.split()
+    summary = " ".join(words[:15]) + "..." if len(words) > 15 else text
+    
+    # Product Heuristic
+    product = "Exxat One" if "exxat one" in text_lower else "Exxat Prism" if "prism" in text_lower else "Unknown"
+    
+    # Severity Heuristic
+    severity = "High" if priority in ["High", "Urgent"] else "Low"
+    
+    return {
+        "Form": "Standard Support Form",
+        "Product": product,
+        "Severity": severity,
+        "Priority": priority,
+        "Level": "Level 1",
+        "Sub Level - Level0": "N/A",
+        "Domain": "N/A",
+        "Main Category": category,
+        "Sub Category": "Login Issue" if "login" in text_lower else "N/A",
+        "Implementation Phase": "N/A",
+        "Tenant ID": "N/A",
+        "Reasons for SLA Missed": "N/A",
+        "Reason to reopen": "N/A",
+        "Ticket summary": summary,
+        "Is Summary accurate?": "Yes",
+        "Ticket Raised For": "End User"
+    }
+
 def process_ticket(text: str):
     """
-    Process a single ticket to get category and sentiment.
+    Process a single ticket to get category, sentiment, and standard fields.
     """
-    sentiment, score = analyze_sentiment(text)
+    sentiment, score, reason = analyze_sentiment(text)
     category = assign_category(text)
     
     tone_map = {
@@ -138,11 +193,16 @@ def process_ticket(text: str):
         "Neutral": "Medium",
         "Positive": "Low"
     }
+    tone = tone_map.get(sentiment, "Medium")
+    
+    standard_fields = extract_standard_fields(text, category, sentiment, tone)
     
     return {
         "sentiment": sentiment,
         "sentiment_score": score,
+        "sentiment_reason": reason,
         "category": category,
-        "tone": tone_map.get(sentiment, "Medium")
+        "tone": tone,
+        "standard_fields": standard_fields
     }
 # Model loaded correctly

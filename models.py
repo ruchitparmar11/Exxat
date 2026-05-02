@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, DateTime, Text, Float
+from sqlalchemy import Column, Integer, String, DateTime, Text, Float, JSON
 from database import Base
 import datetime
 
@@ -14,6 +14,8 @@ class TicketRecord(Base):
     category = Column(String, index=True, nullable=True)
     sentiment = Column(String, index=True, nullable=True)
     sentiment_score = Column(Float, nullable=True)
+    sentiment_reason = Column(String, nullable=True)
+    standard_fields = Column(JSON, nullable=True)
     
     # Optional fields for ground truth if uploaded from training sets
     actual_category = Column(String, nullable=True)
